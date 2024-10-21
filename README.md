@@ -7,6 +7,8 @@ Hello students! Here are some more resources to help you test your projects.
 
 There are 15 days stored in this file, try to make your answers match!
 
+#### core features
+
 Q: What is the maximum `temperature_max` of days 0-9?
 A: 91.2389 degrees Fahrenheit
 
@@ -18,3 +20,35 @@ A: 8.0%
 
 Q: What was the highest weather code between days 10 and 14?
 A: 3.0 (or "Overcast")
+
+#### small extra feature
+
+For the next example questions, the data was obtained online with the parameters in the API link below:
+https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=temperature_2m_max&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles&start_date=2024-10-04&end_date=2024-10-17
+
+An easier-to-read version of the parameters on the actual page can be found [here](https://open-meteo.com/en/docs#hourly=&daily=temperature_2m_max&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles&past_days=7&start_date=2024-10-04&end_date=2024-10-17&time_mode=time_interval)
+
+Part of the response looks like this:
+```
+"temperature_2m_max":[56.7,56.2,54.3,59.3,69.6,67.8,63.7,55.5,56.1,52.7,53.0,53.6,57.0,62.2]
+```
+
+Q: Compare the `temperature_max` on day 0 (2024-10-04) against the `temperature_max` on the same day at 13.41 degrees latitude 52.52 degrees longitude.
+A: (something akin to) The given max temperature of 83.0 is greater than the max temperature of 56.7 found at 13.41 degrees latitude 52.52 degrees longitude.
+
+Q: Compare the maximum `temperature_max` between days 0 and 5 against the same days at 13.41 degrees latitude 52.52 degrees longitude.
+A: The given maximum `temperature_max` of 91.2389 is greater than the maximum `temperature_max` of 69.6 found at 13.41 degrees latitude 52.52 degrees longitude.
+
+#### medium extra feature
+
+When drawing the histogram, please be sure to include:
+- day labels ("day 0" or "2024-10-04" for example)
+- axis labels
+
+Q: Create a histogram of `temperature_min` between days 0 and 7.
+A: \*insert histogram here\* (be sure to include axis and day labels!)
+
+Q: Create a histogram of `wind_speed_max` between days 0 and 14.
+A: \*insert histogram here\*
+
+#### large extra feature
