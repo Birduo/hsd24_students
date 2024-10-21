@@ -52,3 +52,53 @@ Q: Create a histogram of `wind_speed_max` between days 0 and 14.
 A: \*insert histogram here\*
 
 #### large extra feature
+
+Q: Add a new day to the `wichita.txt` data, with the following values: (POST)
+- contestants may have a different format to this POST, as long as the values are retained
+```json
+{
+    "date": ["2024-10-19"],
+    "weather_code": [3.0],
+    "temperature_max": [79.4],
+    "temperature_min": [57.3],
+    "precipitation_sum": [0.0],
+    "wind_speed_max": [14.0],
+    "precipitation_probability_max": [0.0],
+}
+```
+A: \*insert contestant-proposed response here\*
+
+After the previous question,
+Q: What was the `temperature_max` and `temperature_min` on day 15 (2024-10-19)? (GET)
+- contestants may propose the format, as long as it is testable with an HTTP response. A suggested testing page would be [reqbin](https://reqbin.com/)
+A: \*insert contestant-proposed response here\*
+Example response from `wichita.txt`:
+```json
+{
+    "date": ["2024-10-19"],
+    "temperature_max": [79.4],
+    "temperature_min": [57.3]
+}
+```
+
+Then,
+Q: Change the `temperature_min` on day 15 to 59.0 (PUT). Then get it with another GET request.
+A: \*insert contestant-proposed response here\*
+Example response from `wichita.txt`:
+```json
+{
+    "date": ["2024-10-19"],
+    "temperature_max": [79.4],
+    "temperature_min": [59.0]
+}
+```
+
+Finally,
+Q: Delete day 15 from the data (DELETE). Then try to get it with another GET request.
+A: \*insert contestant-proposed response here\*
+Example response from `wichita.txt`:
+```json
+{
+    "error": "Day 15 not found."
+}
+```
