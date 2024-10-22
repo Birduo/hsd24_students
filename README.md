@@ -1,6 +1,12 @@
 # hsd24_students
 Hello students! Here are some more resources to help you test your projects.
 
+## Submit Your Project
+
+At the end of the hackathon, please submit your project in a zip file using the following link:
+
+[Submit your project here](https://docs.google.com/forms/d/e/1FAIpQLSdDeUM_tIDU84ZTwUOClVqSPWCacBoT2BiJOopBfuEB4K4Etg/viewform?usp=sf_link)
+
 ## test solutions
 
 ### wichita.txt
